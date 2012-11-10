@@ -96,7 +96,7 @@
         </div> -->
 
         <div class="jumbotron">
-          <h1>Users. Users. Users.</h1>
+          <h1>When the user matters</h1>
           <p class="lead">We believe that writing code isn’t meant to be hard. It’s all about getting the answers to the right questions in any given problem-domain. We believe Bifrost is part of the solution, allowing development teams to focus on the right problem; namely creating software that solves the needs of the end-user and the business.</p>
           <a class="btn btn-large btn-success" href="#">Say hello now</a>
         </div>
@@ -109,6 +109,25 @@
           <div class="span12" style="text-align:center;">
             <a href="https://twitter.com/dolittle" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @dolittle</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="regionOuter" style="background-color: #ccc;">
+      <div class="container-narrow">
+        <div class="row-fluid marketing">
+          <div class="span4">
+            <h3>Why</h3>
+            <p>Lorem Ipsum. Why oh why</p>
+          </div>
+                    <div class="span4">
+            <h3>How</h3>
+            <p>Lorem Ipsum. How oh how</p>
+          </div>
+                    <div class="span4">
+            <h3>What</h3>
+            <p>Lorem Ipsum. What oh what</p>
           </div>
         </div>
       </div>
@@ -176,6 +195,26 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" language="javascript">
+      
+      var dolittle = {
+        parseEmailFrom : function (email) {
+          var atAlias = "[at]";
+          return email.replace(atAlias, "@");
+        },
+        fixEmails : function () {
+          $("a:contains('[at]')").each(function(){
+            var originalEmail = $(this).text();
+            var friendlyEmail = dolittle.parseEmailFrom(originalEmail);
+            $(this).attr("href", "mailto:" + friendlyEmail).text(friendlyEmail);
+          });
+        }
+      };
+
+      $(document).ready(function(){
+         dolittle.fixEmails();          
+      });
+    </script>
 
   </body>
 </html>
