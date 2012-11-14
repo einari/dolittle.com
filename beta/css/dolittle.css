@@ -69,3 +69,23 @@ body {
 	text-decoration: none;
 	background-color: #6C479E;
 }
+
+[class^="entypo-"],
+[class*=" entypo-"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  *margin-right: .3em;
+  line-height: 20px;
+  vertical-align: text-top;
+  background-image: url("../img/entypo.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+.entypo-phone {
+  background-position: -100px -160px;
+}
+.entypo-mail {
+  background-position: -260px -160px;
+}
