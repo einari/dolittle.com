@@ -14,7 +14,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-	padding: 60px 0;
+	padding: 40px 0;
 	text-align: center;
 }
 .jumbotron h1 {
@@ -31,7 +31,7 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .marketing p + h4 {
 	margin-top: 28px;
@@ -44,7 +44,7 @@ body {
 
 /* Supporting contact content */
 .contact {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .contact p + h4 {
 	margin-top: 28px;
