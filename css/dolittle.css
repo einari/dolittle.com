@@ -1,6 +1,12 @@
+@font-face {
+	font-family: "Segoe";
+	src: url("../font/SegoeUI.ttf");
+}
+
 body {
 	padding-top: 0px;
 	padding-bottom: 0px;
+	font-family: "Segoe", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Custom container */
