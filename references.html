@@ -106,14 +106,22 @@
                             title: "ProCoSys",
                             description: "A line of business application for managing project completion for Statoil and their partners to commission, preserve and complete off & on-shore and subsea plants. One of the targets has been to build a highly scalable solution capable of dealing with a userbase of approximately 50.000 worldwide and still growing.",
                             tags: [
-                                "Bifrost", "CSharp",".net","JavaScrip","NHibernate","ASP.net MVC","KnockoutJS","Oracle11",
+                                "Bifrost", "CSharp",".net","JavaScript","NHibernate","ASP.net MVC","KnockoutJS","Oracle11",
                                 "CQRS", "MVVM", "MVC", "Single Page Application", "Domain Driven Design", 
                                 "Behavior Driven Development", "Scrum", "TFS", "GIT"
                             ]
                         }, 
                         {
+                            title: "Mendo",
+                            description: "Marketing hub connecting merchants and advertising agents and other channels. Productivity improvement software, plus a hub for an organization to deal with marketing budgets and status related to it.",
+                            tags: [
+                                "Bifrost", "Forseti", "CSharp", ".net", "JavaScript", "NHibernate", "HTML5", "CSS", "LESS", "MongoDB", "Azure",
+                                "CQRS", "MVVM", "Single Page Application", "Domain Driven Design", "Behavior Driven Development", "Agile", "GIT"
+                            ]
+                        },
+                        {
                             title: "Komplett",
-                            description: "",
+                            description: "Creating the mobile version of the e-commerce frontend (<a href='http://m.komplett.no'>m.komplett.no</a>). This project lead to establishing what was going to replace the entire e-commerce solution for multiple brands.",
                             tags: [
                                 "Bifrost", "CSharp", ".net", "JavaScript", "NHibernate", "ASP.net MVC", "KnockoutJS", "SQL Server",
                                 "CQRS", "MVVM", "MVC", "Domain Driven Design", "Behavior Driven Development", "SCRUM", "GIT"
@@ -143,7 +151,7 @@
                         },
                         {
                             title: "De Ukjente",
-                            description: "",
+                            description: "A primetime TV gameshow that ran for 3 seasons were there are two teams with two members on each, both being celebrities. The objective of the game was to try to guess the professions of 6 'unknowns'. The contestants used our software running on a Microsoft PixelSense multitouch table and they could colaborate.",
                             tags: [
                                 "CSharp", ".net", "WPF", "PixelSense", "Behavior Driven Development"
                             ]
@@ -195,7 +203,7 @@
                             </div>
                             <div class="span9 description">
                                 <h2 data-bind="text: title">ProCoSys</h2>
-                                <p data-bind="text: description"></p>
+                                <p data-bind="html: description"></p>
 
                         <div class="row tech-tags"> 
                             <ul data-bind="foreach: tags">
