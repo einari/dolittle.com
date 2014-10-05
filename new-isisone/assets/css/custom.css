@@ -1,0 +1,53 @@
+/*REFERENCES*/
+
+#references .logo
+{
+    width: 100px;
+    padding-left: 10px;
+}
+
+#references .description
+{
+    padding-top: 8px;
+}
+
+#references .description strong
+{
+    font-weight: bolder;
+}
+
+
+#references .tech-tags 
+{
+    padding-top: 8px;
+}
+
+#references .tech-tags ul
+{
+
+
+}
+
+#references .tech-tags li
+{
+    display: inline;
+    white-space: nowrap;
+}
+
+#references .tech-tags code
+{
+    color: #666;
+    font-size: 12px;
+    background-color: #efefef;
+}
+
+#references .hr:last{
+	display: none;
+}
+
+#references .screenshot{
+
+	height: 250px;
+}
+
+/*END REFERENCES*/
