@@ -8,9 +8,9 @@ $(function() {
         //     image.src = "references/"+project+"/"+imageNumber+".png";
         // };
 
-        this.isLeft = function(index){
+        this.isRight = function(index){
             index = ko.unwrap(index) || 0;
-            return index % 2 === 0;
+            return index % 2 !== 0;
         }
 
         this.projects = [
