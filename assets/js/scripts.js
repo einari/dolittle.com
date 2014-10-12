@@ -27,6 +27,8 @@
 		_slider_delay			= 0, //4000,
 
 		// GOOGLE MAP
+		$googlemap_center_latitude 	= 59.1192698,
+		$googlemap_center_longitude	= 10.2053379,
 		$googlemap_latitude 	= 59.1192698,
 		$googlemap_longitude	= 10.2235755,
 		$googlemap_zoom			= 14,
@@ -517,11 +519,12 @@ jQuery("#newsletter-subscribe").bind("click", function(e) {
 			}
 		];
 */
+		var center = new google.maps.LatLng($googlemap_center_latitude,$googlemap_center_longitude);
 		var latLang = new google.maps.LatLng($googlemap_latitude,$googlemap_longitude);
 
 		var mapOptions = {
 			zoom:$googlemap_zoom,
-			center: latLang,
+			center: center,
 			disableDefaultUI: false,
 			navigationControl: false,
 			mapTypeControl: false,
@@ -548,7 +551,7 @@ jQuery("#newsletter-subscribe").bind("click", function(e) {
 
 		// kepp googlemap responsive - center on resize
 		google.maps.event.addDomListener(window, 'resize', function() {
-			map.setCenter(latLang);
+			map.setCenter(center);
 		});
 
 	}
