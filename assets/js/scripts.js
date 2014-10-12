@@ -28,7 +28,7 @@
 
 		// GOOGLE MAP
 		$googlemap_center_latitude 	= 59.1192698,
-		$googlemap_center_longitude	= 10.2053379,
+		$googlemap_center_longitude	= 10.2093379,
 		$googlemap_latitude 	= 59.1192698,
 		$googlemap_longitude	= 10.2235755,
 		$googlemap_zoom			= 14,
